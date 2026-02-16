@@ -1,49 +1,35 @@
-# Item Management REST API
+# Item API Project
 
-This is a simple Spring Boot REST API project for managing items.
+This is a simple Spring Boot REST API to manage items.
 
 ## Features
 - Add Item
 - Get All Items
-- Get Item by ID
+- Get Item By ID
 - Update Item
 - Delete Item
-- In-memory storage using ArrayList
 
-## Technologies Used
-- Java 21
+## Tech Stack
+- Java
 - Spring Boot
 - Maven
 - Postman
 
 ## How to Run
 
-1. Open project in Eclipse
-2. Run ItemapiApplication.java
-3. Server runs on port 8080
+1. Open project
+2. Run:
+
+   mvn spring-boot:run
+
+3. Server runs at:
+
+   http://localhost:8080
 
 ## API Endpoints
 
-POST /items  
-Add new item
-
-GET /items  
-Get all items
-
-GET /items/{id}  
-Get item by id
-
-PUT /items/{id}  
-Update item
-
-DELETE /items/{id}  
-Delete item
-
-## Example JSON
-
-{
-  "id": 1,
-  "name": "Mobile",
-  "description": "Samsung Phone"
-}
-
+POST   /items        → Add item  
+GET    /items        → Get all  
+GET    /items/{id}   → Get by id  
+PUT    /items/{id}   → Update  
+DELETE /items/{id}   → Delete
